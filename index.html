@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css " />
+    <title>Shopping list</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="page-top">
+          <h1 class="title">Shopaholic</h1>
+          <!-- search functionality  -->
+          <form id="search-item">
+            <input type="text" placeholder="search items.." />
+
+            <div id="check">
+              <label for="hide">Hide list</label>
+              <input type="checkbox" id="hide" />
+            </div>
+          </form>
+        </div>
+      </header>
+
+      <form id="add-item">
+        <input type="text " placeholder="what do you want to buy?" />
+        <button>Add</button>
+      </form>
+
+      <div id="grocery-list">
+        <ul>
+          <h2 class="title">Items to buy</h2>
+
+          <li>
+            <span class="item"> Milk</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="item"> sugar & spice </span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="item"> Something to drink (e.g. coke)</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="item"> Pizza</span>
+            <span class="delete">delete</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- section 4 adding tabs -->
+      <div id="tab-wrapper">
+        <ul class="heading">
+          <li data-clicked="#joke" class="active">Food Joke</li>
+          <li data-clicked="#facts">Did You know</li>
+        </ul>
+
+        <div id="joke" class="panel">
+          <p>what do you call a fake noodle?</p>
+          <button id="btn">Answer</button>
+          <p id="answer"></p>
+        </div>
+
+        <div id="facts" class="panel">
+          <p>This is what I learnt about food this week</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur earum minima harum sunt est modi autem. Eum, illum?
+            Rerum recusandae impedit ab dolorem ducimus in pariatur alias
+            praesentium, hic reprehenderit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
